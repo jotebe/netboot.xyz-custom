@@ -7,11 +7,11 @@
 clear custom_choice
 menu This is a Test Menu
 item --gap This is the first sub menu
-item option_one ${space} Loading a kernel and initrd
-item option_two ${space} Loading an ISO
+item option_one ${space} Loading a kernel and initrd DONT USE ME I HAVE NOZZING
+item option_two ${space} Loading an ISO (Clonezilla live plz)
 item --gap This is a second sub menu
-item option_three ${space} Loads another custom sub menu
-item option_four ${space} This is option four
+item option_three ${space} Loads another custom sub menu I ALSO AM EMPTY
+item option_four ${space} This is option four NOPE
 choose custom_choice || goto custom_exit
 echo ${cls}
 goto ${custom_choice}
@@ -25,7 +25,7 @@ boot || goto custom_exit
 
 :option_two
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://downloads.sourceforge.net/project/clonezilla/clonezilla_live_alternative/20170626-zesty/clonezilla-live-20170626-zesty-amd64.iso?r=http%3A%2F%2Fclonezilla.org%2Fdownloads%2Fdownload.php%3Fbranch%3Dalternative&ts=1499407317&use_mirror=cytranet
+initrd http://free.nchc.org.tw/clonezilla-live/alternative/stable/20170626-zesty/clonezilla-live-20170626-zesty-amd64.iso
 
 :option_three
 echo Chains into another menu...
