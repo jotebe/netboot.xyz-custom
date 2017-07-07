@@ -26,6 +26,7 @@ boot || goto custom_exit
 :option_two
 kernel https://boot.netboot.xyz/memdisk raw iso
 initrd http://free.nchc.org.tw/clonezilla-live/alternative/stable/20170626-zesty/clonezilla-live-20170626-zesty-amd64.iso
+boot || goto custom_exit
 
 :option_three
 echo Chains into another menu...
